@@ -1,0 +1,12 @@
+.dropdown {
+    overflow: hidden;
+}
+.carousel{
+    background-image: url(/src/img/carousel-1.jpg);
+    background-blend-mode: overlay;
+    background-color:rgb(44, 43, 43);
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 12%;
+}
+
