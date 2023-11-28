@@ -10,3 +10,26 @@
     padding-bottom: 12%;
 }
 
+.btn-readmore-hover:hover{
+    background-color: #fff !important;
+    color: #FFC107;
+}
+.btn-freequote-hover:hover{
+    background-color: #FFC107 !important;
+    color: #ffffff;
+}
+
+
+.aboutus{
+    background-color: #e9e5e5;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.884) ;
+}
+.quote{
+    background-color: #e9e5e5;
+}
+.submit-btn{
+    top: 0;
+    right: 0;
+}
