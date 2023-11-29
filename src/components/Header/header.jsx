@@ -20,6 +20,7 @@ import { IoIosArrowForward } from "react-icons/io"
 
 
 import './header.css'
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
   render() {
@@ -39,39 +40,40 @@ export default class Header extends Component {
                   <a href="/" className="nav-link">HOME</a>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">ABOUT</a>
+                  {/* <a href="/about" className="nav-link">ABOUT</a> */}
+                  <Link to="/about" className="nav-link">ABOUT</Link>
                 </li> 
                 <li className="nav-item">
-                  <a href="/" className="nav-link">SERVICE</a>
+                  <Link to="/services" className="nav-link">SERVICE</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">PROJECT</a>
+                  <Link to="/projects" className="nav-link">PROJECT</Link>
                 </li>
                 <li className="nav-item dropdown">
-                    <a href="/" className="nav-link dropdown-toggle" role="button" data-bs-target="dropdown" aria-expanded="false">PAGES</a>
-                    <ul className="dropdown-menu" id='dropdown'>
-                      <li className='nav-item'>
-                        <a href="/" className="nav-link dropdown-item">Features</a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="/" className="nav-link">Free Quotes</a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="/" className="nav-link">Our Team</a>
-                      </li>
-                      <li className="nav-item">
-                          <a href="/" className="nav-link">Testimonial</a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="/" className="nav-link">404 Page</a>
-                      </li>
-                    </ul>
+                    <Link to="/" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">PAGES</Link>
+                      <ul className="dropdown-menu dropdown" >
+                        <li>
+                          <Link to="/" className=" dropdown-item">Features</Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/" className="nav-link dropdown-item">Free Quotes</Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/" className="nav-link dropdown-item">Our Team</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/" className="nav-link dropdown-item">Testimonial</Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/" className="nav-link dropdown-item">404 Page</Link>
+                        </li>
+                      </ul>
                 </li>
                 <li className="nav-item">
-                  <a href="/" className="nav-link">CONTACT</a>
+                  <Link to="/information" className="nav-link">CONTACT</Link>
                 </li>
                 <li className='bg-warning'>
-                  <a href="/" className='bg-warning p-3 fw-bold text-decoration-none' >Get A Quote <VscArrowRight /></a>
+                  <Link to="/" className='bg-warning p-3 fw-bold text-decoration-none' >Get A Quote <VscArrowRight /></Link>
                 </li>
               </ul>
             </div>

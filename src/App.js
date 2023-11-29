@@ -11,12 +11,27 @@ import Information from './components/Information/information';
 import Members from './components/Members/members';
 import Testimonial from './components/Testimonial/testimonial';
 import Footer from './components/Footer/footer';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
+    <>
     <div className="App">
       <Topbar />
       <Header />
+      <Routes>
+        <Route exact path='/' element={<Main />} />
+        <Route exact path='/featured' element={<Featured />} />
+        <Route exact path='/about' element={<About />} />
+        <Route exact path='/services' element={<Services />} />
+        <Route exact path='/consultation' element={<Consultation />} />
+        <Route exact path='/Projects' element={<Projects />} />
+        <Route exact path='/information' element={<Information />} />
+        <Route exact path='/members' element={<Members />} />
+        <Route exact path='/Testimonial' element={<Testimonial />} />
+        <Route exact path='/footer' element={<Footer />} />
+      </Routes>
+      {/* 
       <Main />
       <Featured />
       <About />
@@ -26,8 +41,9 @@ function App() {
       <Information />
       <Members />
       <Testimonial />
-      <Footer />
+      <Footer /> */}
     </div>
+    </>
   );
 }
 
